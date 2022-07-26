@@ -2,7 +2,6 @@ const path = require('path');
 const sass = require('sass');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -10,6 +9,10 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
       {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
@@ -39,26 +42,31 @@ module.exports = {
             loader: 'sass-loader',
             options: {
               implementation: sass,
+              sourceMap: true,
+              sassOptions: {
+                outputStyle: 'compressed',
+              },
             },
           },
         ],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'img/[hash][ext]',
+        },
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Frontend Mentor | Single-page design portfolio',
       filename: 'index.html',
       template: './src/index.html',
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css',
-    }),
-    new CopyPlugin({
-      patterns: [
-        { from: 'src/public' },
-      ],
     }),
   ],
   resolve: {
@@ -70,5 +78,6 @@ module.exports = {
     filename: '[name].min.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
+    publicPath: '/',
   },
 };
