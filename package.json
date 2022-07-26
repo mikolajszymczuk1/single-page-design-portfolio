@@ -21,12 +21,11 @@
   },
   "homepage": "https://github.com/mikolajszymczuk1/single-page-design-portfolio#readme",
   "dependencies": {
-    "copy-webpack-plugin": "^11.0.0",
+    "autoprefixer": "^10.4.7",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "sass": "^1.54.0",
-    "webpack-merge": "^5.8.0",
-    "autoprefixer": "^10.4.7"
+    "webpack-merge": "^5.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.9",
@@ -37,6 +36,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.26.0",
+    "html-loader": "^4.1.0",
     "postcss": "^8.4.14",
     "postcss-loader": "^7.0.1",
     "sass-loader": "^13.0.2",
