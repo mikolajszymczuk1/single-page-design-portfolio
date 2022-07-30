@@ -1,24 +1,41 @@
 @use '@/assets/scss/utils/variables' as *;
+@use '@/assets/scss/utils/breakpoints' as *;
 
 /* My work section styles */
 
 .my-work {
   padding-bottom: 100px;
 
+  @media screen and (min-width: $medium) {
+    padding-bottom: 120px;
+  }
+
   &__heading {
     font-family: $plus-jakarta;
     text-align: center;
     font-size: 1.5rem;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 2rem;
+    }
   }
 
   &__slider {
     width: 100%;
 
     margin-top: 32px;
+
+    @media screen and (min-width: $tablet) {
+      margin-top: 56px;
+    }
   }
 
   &__slides-wrapper {
     margin-bottom: 32px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 56px;
+    }
   }
 
   &__slide {
@@ -29,6 +46,11 @@
     overflow: hidden;
 
     text-align: center;
+
+    @media screen and (min-width: $tablet) {
+      width: 540px !important;
+      height: 360px !important;
+    }
   }
 
   &__slide-image {
@@ -63,6 +85,10 @@
 
     &--prev {
       margin-right: 15px !important;
+
+      @media screen and (min-width: $tablet) {
+        margin-right: 16px !important;
+      }
     }
   }
 
