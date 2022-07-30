@@ -1,0 +1,25 @@
+@use '@/assets/scss/utils/variables' as *;
+
+/* Index header section styles */
+.index-header {
+  &__texts-section {
+    padding: 32px $section-x-padding;
+
+    font-family: $plus-jakarta;
+    text-align: center;
+  }
+
+  &__heading {
+    margin-bottom: 16px;
+
+    font-size: 2.25rem;
+    color: $black;
+  }
+
+  &__under-heading-text {
+    padding: 0 29px;
+
+    line-height: 26px;
+    color: $gray;
+  }
+}
