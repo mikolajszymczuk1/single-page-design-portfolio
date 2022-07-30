@@ -1,0 +1,18 @@
+@use '@/assets/scss/utils/variables' as *;
+
+/* Scrollbar component styles */
+::-webkit-scrollbar {
+  width: 10px;
+
+  &-track {
+    background-color: $light-purple;
+  }
+
+  &-thumb {
+    background-color: $orange;
+
+    &:hover {
+      background-color: $cyan;
+    }
+  }
+}
