@@ -1,0 +1,33 @@
+@use '@/assets/scss/utils/variables' as *;
+@use '@/assets/scss/utils/mixins/transformationMixins' as *;
+
+/* Color button component styles */
+.color-button {
+  @include size(176px, 44px);
+
+  outline: none;
+  border: 0;
+  border-radius: 25px;
+  cursor: pointer;
+
+  font-size: 0.875rem;
+  font-family: $plus-jakarta;
+  font-weight: 700;
+  color: $white;
+
+  &--black {
+    background-color: $black;
+
+    &:hover {
+      background-color: $light-purple;
+    }
+  }
+
+  &--dark-orange {
+    background-color: $dark-orange;
+
+    &:hover {
+      background-color: $orange;
+    }
+  }
+}
