@@ -14,6 +14,11 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $large) {
+    padding: 136px 165px 88px 165px;
   }
 
   &__image {
@@ -24,6 +29,14 @@
       right: 69px;
 
       @include size(364px);
+    }
+
+    @media screen and (min-width: $desktop) {
+      right: 0;
+
+      margin-right: 125px;
+
+      @include size(445px);
     }
   }
 
@@ -48,6 +61,12 @@
     @media screen and (min-width: $tablet) {
       font-size: 2rem;
     }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 34px;
+
+      font-size: 2.5rem;
+    }
   }
 
   &__text {
@@ -59,6 +78,10 @@
     @media screen and (min-width: $tablet) {
       font-size: 1.125rem;
       line-height: 28px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 32px;
     }
   }
 }

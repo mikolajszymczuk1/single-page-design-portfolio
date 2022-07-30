@@ -14,8 +14,17 @@
     padding: 0 40px;
   }
 
+  @media screen and (min-width: $large) {
+    padding: 0 165px;
+  }
+
   @media screen and (min-width: $tablet) {
     grid-template-columns: 2fr repeat(2, 1fr);
     grid-template-rows: 182px 158px 182px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    grid-template-columns: 2fr repeat(2, 1fr) 2fr;
+    grid-template-rows: 182px 158px;
   }
 }
