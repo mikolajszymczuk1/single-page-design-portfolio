@@ -55,6 +55,11 @@
       width: 540px !important;
       height: 360px !important;
     }
+
+    @media screen and (min-width: $tablet) {
+      width: 580px !important;
+      height: 400px !important;
+    }
   }
 
   &__slide-image {

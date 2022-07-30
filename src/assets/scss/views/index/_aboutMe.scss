@@ -21,6 +21,10 @@
     padding: 136px 165px 88px 165px;
   }
 
+  @media screen and (min-width: $extra-large) {
+    padding: 136px $extra-padding 88px $extra-padding;
+  }
+
   &__image {
     @include size(300px);
 

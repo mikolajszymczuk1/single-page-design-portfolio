@@ -27,4 +27,8 @@
     grid-template-columns: 2fr repeat(2, 1fr) 2fr;
     grid-template-rows: 182px 158px;
   }
+
+  @media screen and (min-width: $extra-large) {
+    padding: 0 $extra-padding;
+  }
 }

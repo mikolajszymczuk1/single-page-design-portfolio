@@ -33,6 +33,10 @@
     padding: 80px 65px;
   }
 
+  @media screen and (min-width: $extra-large) {
+    margin: 0 $extra-padding;
+  }
+
   &__text-wrapper {
     @media screen and (min-width: $desktop) {
       width: 540px;
