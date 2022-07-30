@@ -1,5 +1,22 @@
-@use 'utils/variables' as *;
+/* ====== Main SCSS project file ====== */
 
-body {
-  background-color: $light-purple;
-}
+/* ====== Base styles ================= */
+
+@use '@/assets/scss/utils/base';
+
+/* ==================================== */
+
+/* ====== Components ================== */
+
+@use '@/assets/scss/components/navigationBar';
+@use '@/assets/scss/components/buttons/colorButton';
+@use '@/assets/scss/components/illustrationCard';
+
+/* ==================================== */
+
+/* ====== Index view ================== */
+
+@use '@/assets/scss/views/index/indexHeader';
+@use '@/assets/scss/views/index/categoryGrid';
+
+/* ==================================== */
