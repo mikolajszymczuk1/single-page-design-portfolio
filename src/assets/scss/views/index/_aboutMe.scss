@@ -1,0 +1,32 @@
+@use '@/assets/scss/utils/variables' as *;
+@use '@/assets/scss/utils/mixins/transformationMixins' as *;
+
+/* About me section styles */
+.about-me {
+  padding: 100px $section-x-padding;
+
+  text-align: center;
+
+  &__image {
+    @include size(300px);
+  }
+
+  &__about-text-wrapper {
+    margin-top: 40px;
+
+    font-family: $plus-jakarta;
+  }
+
+  &__heading {
+    margin-bottom: 24px;
+
+    color: $black;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+
+    color: $gray;
+    line-height: 26px;
+  }
+}
