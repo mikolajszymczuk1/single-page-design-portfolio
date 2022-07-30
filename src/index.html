@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Frontend Mentor challenge">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png">
+  <title>Frontend Mentor | Single-page design portfolio</title>
 
   <!-- Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,13 +16,109 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-  <h1>Hello World !</h1>
+  <!-- ====== Header ====== -->
+  <header class="index-header">
+    <!-- === Navigation component === -->
+    <nav class="navigation-bar navigation-bar--main">
+      <img class="navigation-bar__logo" src="./assets/svg/logo.svg" alt="Square with circle inside" title="Logo icon">
+      <button class="color-button color-button--black">Free Consultation</button>
+    </nav>
+    <!-- === END Navigation component === -->
+
+    <!-- === Header texts === -->
+    <section class="index-header__texts-section">
+      <h1 class="index-header__heading">Design solutions made easy</h1>
+      <p class="index-header__under-heading-text">
+        With over ten years of experience in various design disciplines,
+        I'm your one-stop shop for your design needs.
+      </p>
+    </section>
+    <!-- === END Header texts === -->
+  </header>
+  <!-- ====== END Header ====== -->
+
+  <!-- ====== Main ====== -->
+  <main>
+    <!-- === Category grid section === -->
+    <section class="category-grid">
+      <!-- === Illustration card -- Graphic Design === -->
+      <article class="illustration-card illustration-card--light-purple">
+        <img
+          class="illustration-card__illustration"
+          src="./assets/svg/pattern-graphic-design.svg"
+          alt="different shapes" title="card-illustration"
+        >
+
+        <h2 class="illustration-card__card-heading">Graphic Design</h2>
+      </article>
+      <!-- END Illustration card -- Graphic Design -->
+
+      <!-- === Illustration card -- UI/UX === -->
+      <article class="illustration-card illustration-card--orange">
+        <img
+          class="illustration-card__illustration"
+          src="./assets/svg/pattern-ui-ux.svg"
+          alt="different shapes" title="card-illustration"
+        >
+
+        <h2 class="illustration-card__card-heading">UI/UX</h2>
+      </article>
+      <!-- === END Illustration card -- UI/UX === -->
+
+      <!-- === Illustration card -- Apps === -->
+      <article class="illustration-card illustration-card--light-pink">
+        <img
+          class="illustration-card__illustration"
+          src="./assets/svg/pattern-apps.svg"
+          alt="different shapes" title="card-illustration"
+        >
+
+        <h2 class="illustration-card__card-heading">Apps</h2>
+      </article>
+      <!-- === END Illustration card -- Apps === -->
+
+      <!-- === Illustration card -- Illustrations === -->
+      <article class="illustration-card illustration-card--dark-orange">
+        <img
+          class="illustration-card__illustration"
+          src="./assets/svg/pattern-illustrations.svg"
+          alt="different shapes" title="card-illustration"
+        >
+
+        <h2 class="illustration-card__card-heading">Illustrations</h2>
+      </article>
+      <!-- === END Illustration card -- Illustrations === -->
+
+      <!-- === Illustration card -- Photography === -->
+      <article class="illustration-card illustration-card--cyan">
+        <img
+          class="illustration-card__illustration"
+          src="./assets/svg/pattern-photography.svg"
+          alt="different shapes" title="card-illustration"
+        >
+
+        <h2 class="illustration-card__card-heading">Photography</h2>
+      </article>
+      <!-- === END Illustration card -- Photography === -->
+
+      <!-- === Illustration card -- Motion Graphics === -->
+      <article class="illustration-card illustration-card--dark-purple">
+        <img
+          class="illustration-card__illustration"
+          src="./assets/svg/pattern-motion-graphics.svg"
+          alt="different shapes" title="card-illustration"
+        >
+
+        <h2 class="illustration-card__card-heading">Motion Graphic</h2>
+      </article>
+      <!-- === END Illustration card -- Motion Graphics === -->
+    </section>
+    <!-- === END category grid section === -->
+  </main>
+  <!-- ====== END Main ====== -->
 </body>
 
 </html>
