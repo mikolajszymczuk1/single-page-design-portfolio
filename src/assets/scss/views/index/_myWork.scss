@@ -10,6 +10,10 @@
     padding-bottom: 120px;
   }
 
+  @media screen and (min-width: $large) {
+    padding-bottom: 88px;
+  }
+
   &__heading {
     font-family: $plus-jakarta;
     text-align: center;
@@ -81,6 +85,10 @@
 
     &::after {
       display: none;
+    }
+
+    &:hover {
+      background-color: $light-purple;
     }
 
     &--prev {
