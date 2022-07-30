@@ -13,6 +13,10 @@ const indexSwiper = new Swiper('.swiper', {
   spaceBetween: 15,
   loop: true,
   a11y: true,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
   navigation: {
     nextEl: '.my-work__navigation-button--next',
     prevEl: '.my-work__navigation-button--prev',
