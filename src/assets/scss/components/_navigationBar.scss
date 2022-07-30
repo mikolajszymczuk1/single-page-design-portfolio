@@ -1,5 +1,6 @@
 @use '@/assets/scss/utils/mixins/transformationMixins' as *;
 @use '@/assets/scss/utils/variables' as *;
+@use '@/assets/scss/utils/breakpoints' as *;
 
 /* Navigation bar component styles */
 .navigation-bar {
@@ -9,13 +10,25 @@
 
   &__logo {
     @include size(48px);
+
+    @media screen and (min-width: $tablet) {
+      @include size(64px);
+    }
   }
 
   &--main {
-    padding: 16px $section-x-padding;
+    padding: 16px $section-x-padding 0 $section-x-padding;
+
+    @media screen and (min-width: $medium) {
+      padding: 34px 40px 0 40px;
+    }
   }
 
   &--bottom-nav {
     padding: 40px $section-x-padding 32px $section-x-padding;
+
+    @media screen and (min-width: $medium) {
+      padding: 56px 40px;
+    }
   }
 }

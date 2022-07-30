@@ -1,5 +1,6 @@
 @use '@/assets/scss/utils/variables' as *;
 @use '@/assets/scss/utils/mixins/transformationMixins' as *;
+@use '@/assets/scss/utils/breakpoints' as *;
 
 /* About me section styles */
 .about-me {
@@ -7,14 +8,35 @@
 
   text-align: center;
 
+  @media screen and (min-width: $medium) {
+    padding: 120px 40px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+
   &__image {
     @include size(300px);
+
+    @media screen and (min-width: $tablet) {
+      position: relative;
+      right: 69px;
+
+      @include size(364px);
+    }
   }
 
   &__about-text-wrapper {
     margin-top: 40px;
 
     font-family: $plus-jakarta;
+
+    @media screen and (min-width: $tablet) {
+      margin-top: 0;
+
+      text-align: left;
+    }
   }
 
   &__heading {
@@ -22,6 +44,10 @@
 
     font-size: 1.625rem;
     color: $black;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 2rem;
+    }
   }
 
   &__text {
@@ -29,5 +55,10 @@
 
     color: $gray;
     line-height: 26px;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 1.125rem;
+      line-height: 28px;
+    }
   }
 }

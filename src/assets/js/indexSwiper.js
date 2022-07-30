@@ -17,6 +17,11 @@ const indexSwiper = new Swiper('.swiper', {
     nextEl: '.my-work__navigation-button--next',
     prevEl: '.my-work__navigation-button--prev',
   },
+  breakpoints: {
+    768: {
+      spaceBetween: 30,
+    },
+  },
 });
 
 export default indexSwiper;

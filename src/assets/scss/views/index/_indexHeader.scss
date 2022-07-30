@@ -1,4 +1,5 @@
 @use '@/assets/scss/utils/variables' as *;
+@use '@/assets/scss/utils/breakpoints' as *;
 
 /* Index header section styles */
 .index-header {
@@ -7,6 +8,10 @@
 
     font-family: $plus-jakarta;
     text-align: center;
+
+    @media screen and (min-width: $medium) {
+      padding: 64px 40px;
+    }
   }
 
   &__heading {
@@ -14,6 +19,12 @@
 
     font-size: 2.25rem;
     color: $black;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 27px;
+
+      font-size: 2.75rem;
+    }
   }
 
   &__under-heading-text {
@@ -21,5 +32,12 @@
 
     line-height: 26px;
     color: $gray;
+
+    @media screen and (min-width: $tablet) {
+      padding: 0 59px;
+
+      line-height: 28px;
+      font-size: 1.125rem;
+    }
   }
 }
