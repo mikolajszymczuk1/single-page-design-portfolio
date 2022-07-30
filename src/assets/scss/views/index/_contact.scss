@@ -1,0 +1,24 @@
+@use '@/assets/scss/utils/variables' as *;
+
+/* Contact section styles */
+.contact {
+  margin: 0 $section-x-padding;
+  padding: 48px 24px;
+
+  background-color: $black;
+  border-radius: 10px;
+
+  font-family: $plus-jakarta;
+  text-align: center;
+  color: $white;
+
+  &__heading {
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    line-height: 26px;
+  }
+}
+

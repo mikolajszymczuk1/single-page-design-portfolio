@@ -22,7 +22,7 @@
   <!-- ====== Header ====== -->
   <header class="index-header">
     <!-- === Navigation component === -->
-    <nav class="navigation-bar navigation-bar--main">
+    <nav class="navigation-bar navigation-bar--main" aria-label="top navigation">
       <img class="navigation-bar__logo" src="./assets/svg/logo.svg" alt="Square with circle inside" title="Logo icon">
       <button class="color-button color-button--black">Free Consultation</button>
     </nav>
@@ -138,8 +138,96 @@
       </div>
     </section>
     <!-- === END About me section === -->
+
+    <!-- === My work section === -->
+    <section class="my-work">
+      <h2 class="my-work__heading">My Work</h2>
+      <div class="my-work__slider swiper">
+        <div class="my-work__slides-wrapper swiper-wrapper">
+          <div class="my-work__slide swiper-slide">
+            <img
+              class="my-work__slide-image"
+              src="./assets/images/image-slide-1.jpg"
+              alt="Image 1" title="Slide image 1">
+          </div>
+
+          <div class="my-work__slide swiper-slide">
+            <img
+              class="my-work__slide-image"
+              src="./assets/images/image-slide-2.jpg"
+              alt="Image 2" title="Slide image 2">
+          </div>
+
+          <div class="my-work__slide swiper-slide">
+            <img
+              class="my-work__slide-image"
+              src="./assets/images/image-slide-3.jpg"
+              alt="Image 3" title="Slide image 3">
+          </div>
+
+          <div class="my-work__slide swiper-slide">
+            <img
+              class="my-work__slide-image"
+              src="./assets/images/image-slide-4.jpg"
+              alt="Image 4" title="Slide image 4">
+          </div>
+
+          <div class="my-work__slide swiper-slide">
+            <img
+              class="my-work__slide-image"
+              src="./assets/images/image-slide-5.jpg"
+              alt="Image 5" title="Slide image 5">
+          </div>
+        </div>
+
+        <div class="my-work__nav-buttons-wrapper">
+          <button class="my-work__navigation-button my-work__navigation-button--prev swiper-button-prev">
+            <img
+              class="my-work__navigation-icon"
+              src="./assets/svg/icon-arrow-left.svg"
+              alt="White navigation arrow"
+              title="Navigation arrow icon"
+            >
+          </button>
+
+          <button class="my-work__navigation-button my-work__navigation-button--next swiper-button-next">
+            <img
+              class="my-work__navigation-icon"
+              src="./assets/svg/icon-arrow-right.svg"
+              alt="White navigation arrow"
+              title="Navigation arrow icon"
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- === END My work section === -->
+
+    <!-- === Contact section === -->
+    <section class="contact">
+      <h2 class="contact__heading">Book a call with me</h2>
+      <p class="contact__text">
+        I'd love to have a chat to see how I can help you.
+        The best first step is for us to discuss your project during a free consultation.
+        Then we can move forward from there.
+      </p>
+
+      <button class="color-button color-button--dark-orange">Free Consultation</button>
+    </section>
+    <!-- === END Contact section === -->
   </main>
   <!-- ====== END Main ====== -->
+
+  <!-- Footer section -->
+  <footer>
+    <!-- === Navigation component === -->
+    <nav class="navigation-bar navigation-bar--bottom-nav" aria-label="bottom navigation">
+      <img class="navigation-bar__logo" src="./assets/svg/logo.svg" alt="Square with circle inside" title="Logo icon">
+      <button class="color-button color-button--black">Free Consultation</button>
+    </nav>
+    <!-- === END Navigation component === -->
+  </footer>
+  <!-- END Footer section -->
 </body>
 
 </html>
