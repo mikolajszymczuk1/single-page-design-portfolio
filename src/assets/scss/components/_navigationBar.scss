@@ -1,0 +1,17 @@
+@use '@/assets/scss/utils/mixins/transformationMixins' as *;
+@use '@/assets/scss/utils/variables' as *;
+
+/* Navigation bar component styles */
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    @include size(48px);
+  }
+
+  &--main {
+    padding: 16px $section-x-padding;
+  }
+}
