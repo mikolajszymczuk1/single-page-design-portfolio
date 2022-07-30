@@ -1,3 +1,5 @@
+@use '@/assets/scss/utils/variables' as *;
+
 /* Category grid section styles */
 .category-grid {
   display: grid;
@@ -5,5 +7,5 @@
   grid-template-rows: 364px 182px 158px repeat(2, 182px);
   gap: 24px;
 
-  padding: 0 16px;
+  padding: 0 $section-x-padding;
 }
