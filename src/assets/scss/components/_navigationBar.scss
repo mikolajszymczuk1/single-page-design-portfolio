@@ -26,6 +26,10 @@
     @media screen and (min-width: $large) {
       padding: 34px 165px 0 165px;
     }
+
+    @media screen and (min-width: $extra-large) {
+      padding: 34px $extra-padding 0 $extra-padding;
+    }
   }
 
   &--bottom-nav {
@@ -37,6 +41,10 @@
 
     @media screen and (min-width: $large) {
       padding: 56px 165px 64px 165px;
+    }
+
+    @media screen and (min-width: $extra-large) {
+      padding: 56px $extra-padding 64px $extra-padding;
     }
   }
 }

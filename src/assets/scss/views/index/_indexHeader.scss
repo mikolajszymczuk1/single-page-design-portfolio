@@ -20,6 +20,10 @@
     @media screen and (min-width: $desktop) {
       padding: 66px 344px 80px 334px;
     }
+
+    @media screen and (min-width: $extra-large) {
+      padding: 66px $extra-padding 80px $extra-padding;
+    }
   }
 
   &__heading {
