@@ -1,0 +1,5 @@
+// Change width and/or height
+@mixin size($w, $h: $w) {
+  width: $w;
+  height: $h;
+}
